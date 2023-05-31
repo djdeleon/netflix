@@ -22,8 +22,8 @@ export async function getServerSideProps(context: NextPageContext) {
 
 
 const profiles = () => {
-  const router = useRouter();
   const { data: user } = useCurrentUser();
+  const router = useRouter();
 
   return (
     <div className="flex items-center h-full justify-center">
